@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size:50px;
+    cursor: pointer;
+}
+span{
+    color: rgba(0, 128, 255, 0.6);
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: rgba(0, 128, 255, 0.6);
+    transition: .4s;
+}
+.btn{
+    background-color: rgba(0, 128, 255, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+}
+
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 60px;
+}
+
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: rgba(159, 211, 251, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.img{
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    transform: translateY(-50%);
+}
+.img img{
+    width: 100%;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px 5px rgba(0, 128, 255, 0.6); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+  
+}
+.about img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgba(0, 128, 255, 0.6);
+}
+.about-text{
+    width: 550px;
+    margin-left: 150px;
+}
+.main{
+    width: 1130px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 175px;
+
+}
+
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: rgba(159, 211, 251, 0.8);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.service{
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 380px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgba(0, 128, 255, 0.6);
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: rgba(159, 211, 251, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: rgba(0, 128, 255, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(0, 128, 255, 0.6) ;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end{
+    position: absolute;
+    color: rgba(0, 128, 255, 0.6) ;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+.Skill{
+    background: black;
+    text-align: center;
+}
+
+.section_text_p1{
+    font-size: large;
+    color: rgba(159, 211, 251, 0.8);
+    text-align: center;
+    margin: 0;
+}
+
+.section_text_p2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.skills{
+  
+    justify-content: space-between;
+}
+
+.skills-grid{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    width: 700px;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 400px;
+} 
+
+.skills span {
+    margin-right: 10px; 
+}
+
+.skills span i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.skills span p{
+    font-size: 20px;
+}
+
+.skills p{
+    color: white;
+}
+
+.skills p {
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+.skills span i {
+    display: inline;
+    margin-right: 5px;
+}
+
+.scroll-to-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 128, 255, 0.6); 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scroll-to-home-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 128, 255, 0.6);
+    cursor: pointer;
+}
+
+/* ----------------------- Responsive Design ----------------------- */
+
+/* มือถือหน้าจอเล็ก */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  .content {
+    position: static;
+    transform: none;
+    padding: 30px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .img {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .img img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .main {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skills-grid {
+    width: 90%;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  footer {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .scroll-to-home-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* แท็บเล็ต */
+@media (max-width: 1024px) {
+  .img {
+    right: 50px;
+  }
+
+  .skills-grid {
+    width: 90%;
+    margin: auto;
+  }
+
+  .main {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .about-text {
+    margin-left: 20px;
+  }
+}
+
+.message .p {
+    color: white;
+}
